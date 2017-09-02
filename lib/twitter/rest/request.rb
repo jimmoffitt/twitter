@@ -13,6 +13,7 @@ module Twitter
     class Request
       include Twitter::Utils
       BASE_URL = 'https://api.twitter.com'.freeze
+      BASE_NEW_URL = 'https://developers.twitter.com'.freeze
       attr_accessor :client, :headers, :options, :path, :rate_limit,
                     :request_method, :uri
       alias verb request_method
